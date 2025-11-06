@@ -1,0 +1,20 @@
+{
+  "name": "video-backend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^4.1.4",
+    "bootstrap": "^4.4.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^17.2.3",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "socket.io": "^2.3.0",
+    "xss": "^1.0.8"
+  },
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  }
+}
