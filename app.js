@@ -15,10 +15,11 @@ const io = socketIO(server);
 // --- Middleware ---
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || '*', // Use FRONTEND_URL from .env
+    origin: '*', // allow all frontends
     methods: ['GET', 'POST'],
   })
 );
+
 app.use(bodyParser.json());
 
 // --- Serve frontend in production ---
