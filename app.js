@@ -116,7 +116,9 @@ io.on('connection', (socket) => {
     }
   });
 });
-
+app.get('/api/test', (req, res) => {
+  res.json({ success: true, message: 'Backend API is working!' });
+});
 // --- Start server ---
 server.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
